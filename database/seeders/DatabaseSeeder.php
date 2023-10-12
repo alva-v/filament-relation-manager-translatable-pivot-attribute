@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
             ->hasAttached(
                 Bar::factory(),
                 [
-                    'pivot_attribute' => [
+                    'attribute' => [
                         'en' => 'english value',
                         'fr' => 'french value',
                 ]

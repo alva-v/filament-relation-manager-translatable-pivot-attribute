@@ -27,7 +27,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('bar_id')->constrained()->cascadeOnDelete();
             $table->foreignId('foo_id')->constrained()->cascadeOnDelete();
-            $table->string('pivot_attribute')->nullable();
+            $table->json('attribute')->nullable();
         });
     }
 

@@ -9,5 +9,5 @@ class BarFoo extends Pivot
 {
     use HasTranslations;
 
-    public $translatable = ['pivot_attribute'];
+    public $translatable = ['attribute'];
 }

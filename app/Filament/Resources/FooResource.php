@@ -4,6 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\FooResource\Pages;
 use App\Filament\Resources\FooResource\RelationManagers;
+use App\Filament\Resources\FooResource\RelationManagers\BarsRelationManager;
 use App\Models\Foo;
 use Filament\Forms;
 use Filament\Forms\Form;
@@ -58,7 +59,7 @@ class FooResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            BarsRelationManager::class,
         ];
     }
     

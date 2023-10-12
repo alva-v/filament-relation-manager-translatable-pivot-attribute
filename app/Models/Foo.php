@@ -34,12 +34,15 @@ class Foo extends Model
         'name'
     ];
 
-    public $translatable = ['name'];
+    public $translatable = [
+        'name',
+        'attribute',
+    ];
 
     public function bars()
     {
         return $this->belongsToMany(Bar::class)
             ->using(BarFoo::class)
-            ->withPivot('id', 'pivot_attribute');
+            ->withPivot('attribute');
     }
 }
