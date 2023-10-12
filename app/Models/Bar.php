@@ -8,6 +8,7 @@ namespace App\Models;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\Translatable\HasTranslations;
 
@@ -25,7 +26,7 @@ use Spatie\Translatable\HasTranslations;
  */
 class Bar extends Model
 {
-    use HasTranslations;
+    use HasFactory, HasTranslations;
     
     protected $table = 'bars';
 
