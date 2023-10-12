@@ -18,8 +18,8 @@ class FooFactory extends Factory
     {
         return [
             'name' => [
-                'fr' => fake()->catchPhrase(),
-                'en' => fake('en_US')->bs(),
+                'fr' => fake('fr_FR')->word(),
+                'en' => fake()->word(),
             ],
         ];
     }
